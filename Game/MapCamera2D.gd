@@ -163,7 +163,7 @@ func clamp_offset(relative := Vector2()):
 	var camera_size = get_viewport_rect().size / zoom
 	var camera_rect = Rect2(get_screen_center_position() + relative - camera_size / 2, camera_size)
 	
-	if camera_rect.position.x < limit_left:
+	if camera_rect.position.x < limit_left: 
 		_drag_movement.x = 0
 		relative.x += limit_left - camera_rect.position.x
 		camera_rect.end.x += limit_left - camera_rect.position.x

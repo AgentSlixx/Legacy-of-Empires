@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dskpojkp8joia"]
 
 [ext_resource type="Script" uid="uid://fdksrdd6ucbv" path="res://map-selection-screen/map_selection_screen.gd" id="1_hvpji"]
+[ext_resource type="Texture2D" uid="uid://k6p52j7nny4" path="res://map-selection-screen/map-selection-screen-assets/istockphoto-1346709051-612x612.jpg" id="2_5h3pq"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mm15w"]
 load_path = "res://.godot/imported/istockphoto-1346709051-612x612.jpg-289454b40497d0e372f6c4e33e983c34.ctex"
@@ -8,8 +9,14 @@ load_path = "res://.godot/imported/istockphoto-1346709051-612x612.jpg-289454b404
 [node name="Scene Selection" type="Node2D" unique_id=1157667865]
 script = ExtResource("1_hvpji")
 
-[node name="background-image-texture-rect" type="TextureRect" parent="." unique_id=943828255]
-offset_right = 1154.0
+[node name="background-image" type="Sprite2D" parent="." unique_id=279302924]
+position = Vector2(572.99994, 322.5)
+scale = Vector2(1.8758168, 1.8750001)
+texture = ExtResource("2_5h3pq")
+
+[node name="texture" type="TextureRect" parent="." unique_id=943828255]
+offset_left = 1338.0
+offset_right = 2492.0
 offset_bottom = 652.0
 texture = SubResource("CompressedTexture2D_mm15w")
 

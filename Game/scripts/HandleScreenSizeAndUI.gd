@@ -5,7 +5,10 @@ var BASE_SCREEN = Vector2(1152.0, 648.0)
 var tracked_elements := {}
 
 var background: Node = null
+var map: Node = null
 var current_scene: Node = null
+
+var camera: MapCamera2D = null
 
 #Main entry function, you call it in _ready() function of a scene
 func setup_ui(target_scene: Node) -> void:
@@ -35,10 +38,18 @@ func _collect_all_elements(current_node: Node) -> void:
 				#has any of the strings like bckgd, background or Background in its name
 				#we put it in is_background
 
+			var is_map = (child.name.contains("Map") or child.name.contains("map"))
+
 			if is_background: #if current_node is background
 				background = child
-			else: #we add it to the list of elements if its other element
+			elif is_map:
+				map = child
+			elif child is MapCamera2D:
+				camera = child
+			else:
 				_save_initial_data(child)
+			#else: #we add it to the list of elements if its other element
+				#_save_initial_data(child)
 		#We don't need recursive here, just grab parent node and all its kids 
 		#will move and change together with parent
 		#if child.get_child_count() > 0:
@@ -73,12 +84,47 @@ func _reposition_background(screen_size: Vector2) -> void:
 		background.position = screen_size / 2.0
 		background.scale = screen_size / tex_size
 
+func _reposition_map(screen_size: Vector2) -> void:
+	if not is_instance_valid(map):
+		return
+
+	if map is Sprite2D and map.texture:
+		var tex_size = map.texture.get_size()
+
+		var scale_x = screen_size.x / tex_size.x
+		var scale_y = screen_size.y / tex_size.y
+		map.position = screen_size / 2.0
+		var scale_factor = max(scale_x, scale_y)
+
+		map.scale = Vector2(scale_factor, scale_factor)
+
+func _update_camera_limits() -> void:
+	if not is_instance_valid(map):
+		return
+
+	if not is_instance_valid(camera):
+		return
+
+	if map is Sprite2D and map.texture:
+
+		var map_size = map.texture.get_size() * map.scale
+
+		camera.limit_left = int(map.position.x - map_size.x / 2.0)
+		camera.limit_right = int(map.position.x + map_size.x / 2.0)
+
+		camera.limit_top = int(map.position.y - map_size.y / 2.0)
+		camera.limit_bottom = int(map.position.y + map_size.y / 2.0)
+
+		camera.clamp_offset()
+
 #We call this function every time window size changes
 func _on_window_resized() -> void:
 	#We take size of the new resized window
 	var screen_size = get_viewport().get_visible_rect().size
 	#Reposition background according to the new screen size
 	_reposition_background(screen_size)
+	_reposition_map(screen_size)
+	_update_camera_limits()
 	#Reposition every element on the scene according to the new size
 	for node in tracked_elements.keys():
 		_reposition_element(node, screen_size)
