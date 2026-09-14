@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 [autoload]
 
 RandomTextScript="*uid://byibiigkbj5qn"
+HandleScreenSizeAndUI="*uid://be1euijdtg7q"
 
 [display]
 

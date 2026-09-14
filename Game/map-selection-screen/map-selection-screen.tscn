@@ -8,80 +8,61 @@ load_path = "res://.godot/imported/istockphoto-1346709051-612x612.jpg-289454b404
 [node name="Scene Selection" type="Node2D" unique_id=1157667865]
 script = ExtResource("1_hvpji")
 
-[node name="Control2" type="Control" parent="." unique_id=1771626186]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect" type="TextureRect" parent="Control2" unique_id=943828255]
-layout_mode = 0
+[node name="background-image-texture-rect" type="TextureRect" parent="." unique_id=943828255]
 offset_right = 1154.0
 offset_bottom = 652.0
 texture = SubResource("CompressedTexture2D_mm15w")
 
-[node name="Control" type="Control" parent="." unique_id=904284907]
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=757280344]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=757280344]
 custom_minimum_size = Vector2(100, 80)
-layout_mode = 0
 offset_left = 365.0
 offset_right = 857.0
 offset_bottom = 645.0
 theme_override_constants/separation = 31
 alignment = 1
 
-[node name="Troy" type="Button" parent="Control/VBoxContainer" unique_id=1337026149]
+[node name="Troy" type="Button" parent="VBoxContainer" unique_id=1337026149]
 custom_minimum_size = Vector2(360, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 26
 text = "Trojan War"
 
-[node name="100 Years War" type="Button" parent="Control/VBoxContainer" unique_id=53787002]
+[node name="100 Years War" type="Button" parent="VBoxContainer" unique_id=53787002]
 custom_minimum_size = Vector2(360, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 26
 text = "100 Years War"
 
-[node name="Alexander the Great" type="Button" parent="Control/VBoxContainer" unique_id=808934016]
+[node name="Alexander the Great" type="Button" parent="VBoxContainer" unique_id=808934016]
 custom_minimum_size = Vector2(360, 80)
 layout_mode = 2
 offset_transform_position = Vector2(-0.095, 0)
 theme_override_font_sizes/font_size = 26
 text = "Wars of Alexander the Great"
 
-[node name="Second Punic War" type="Button" parent="Control/VBoxContainer" unique_id=158225894]
+[node name="Second Punic War" type="Button" parent="VBoxContainer" unique_id=158225894]
 custom_minimum_size = Vector2(360, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 26
 text = "Second Punic War"
 
-[node name="First Crusade" type="Button" parent="Control/VBoxContainer" unique_id=912169130]
+[node name="First Crusade" type="Button" parent="VBoxContainer" unique_id=912169130]
 custom_minimum_size = Vector2(360, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 26
 text = "The First Crusade"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=1409074819]
-layout_mode = 0
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1409074819]
 offset_left = 66.0
 offset_top = 504.0
 offset_right = 274.0
 offset_bottom = 584.0
 
-[node name="Back" type="Button" parent="Control/HBoxContainer" unique_id=1194005056]
+[node name="Back" type="Button" parent="HBoxContainer" unique_id=1194005056]
 custom_minimum_size = Vector2(200, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 26
 text = "Back"
 
-[connection signal="pressed" from="Control/VBoxContainer/Second Punic War" to="." method="_on_second_punic_war_pressed"]
-[connection signal="pressed" from="Control/HBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBoxContainer/Second Punic War" to="." method="_on_second_punic_war_pressed"]
+[connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]

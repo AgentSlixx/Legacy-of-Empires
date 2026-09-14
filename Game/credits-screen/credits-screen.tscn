@@ -50,19 +50,19 @@ corner_radius_bottom_left = 8
 [node name="CreditsScreen" type="Node2D" unique_id=1529425385]
 script = ExtResource("1_8j0xv")
 
-[node name="backround-image" type="Sprite2D" parent="." unique_id=2014057925]
+[node name="background-image" type="Sprite2D" parent="." unique_id=2014057925]
 position = Vector2(575.625, 322.1875)
 scale = Vector2(0.6858553, 0.68185437)
 texture = ExtResource("2_rki6m")
 
-[node name="LanguagePanel" type="Panel" parent="." unique_id=687648832]
+[node name="CreditsPanel" type="Panel" parent="." unique_id=687648832]
 offset_left = 161.0
 offset_top = 150.0
 offset_right = 991.0
 offset_bottom = 531.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_xqw2s")
 
-[node name="title-text-label" type="Label" parent="LanguagePanel" unique_id=1945082829]
+[node name="title-text-label" type="Label" parent="CreditsPanel" unique_id=1945082829]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 20.0
@@ -74,7 +74,7 @@ text = "LEGACY OF EMPIRES"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="programming-text-label" type="Label" parent="LanguagePanel" unique_id=1079170187]
+[node name="programming-text-label" type="Label" parent="CreditsPanel" unique_id=1079170187]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 85.0
@@ -87,7 +87,7 @@ text = "PROGRAMMING"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="programming-names-text-label2" type="Label" parent="LanguagePanel" unique_id=2097498550]
+[node name="programming-names-text-label2" type="Label" parent="CreditsPanel" unique_id=2097498550]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 119.0
@@ -100,7 +100,7 @@ text = "Lazar, Slixx"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="art-text-label" type="Label" parent="LanguagePanel" unique_id=1864835963]
+[node name="art-text-label" type="Label" parent="CreditsPanel" unique_id=1864835963]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 167.0
@@ -113,7 +113,7 @@ text = "ART"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="programming-names-text-label" type="Label" parent="LanguagePanel" unique_id=1421233300]
+[node name="programming-names-text-label" type="Label" parent="CreditsPanel" unique_id=1421233300]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 201.0
@@ -126,7 +126,7 @@ text = "Lazar, Slixx"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="special-thanks-text-label" type="Label" parent="LanguagePanel" unique_id=535685236]
+[node name="special-thanks-text-label" type="Label" parent="CreditsPanel" unique_id=535685236]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 249.0
@@ -139,7 +139,7 @@ text = "SPECIAL THANKS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="special-thanks-text-label2" type="Label" parent="LanguagePanel" unique_id=1251275069]
+[node name="special-thanks-text-label2" type="Label" parent="CreditsPanel" unique_id=1251275069]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 283.0
@@ -152,7 +152,7 @@ text = "To our families and everyone who supports us."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="info-text-label" type="Label" parent="LanguagePanel" unique_id=1862050065]
+[node name="info-text-label" type="Label" parent="CreditsPanel" unique_id=1862050065]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 327.0
@@ -166,9 +166,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="back-button" type="Button" parent="." unique_id=1773000895]
-offset_left = 473.0
+offset_left = 476.0
 offset_top = 549.0
-offset_right = 673.0
+offset_right = 676.0
 offset_bottom = 609.0
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)

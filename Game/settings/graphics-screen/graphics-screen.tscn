@@ -412,6 +412,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="GraphicsScreenScene" type="Node2D" unique_id=581411485]
+script = ExtResource("2_tk3ca")
 
 [node name="background-image" type="Sprite2D" parent="." unique_id=1736058538]
 position = Vector2(575.75, 323.75)
@@ -465,6 +466,7 @@ theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824,
 theme_override_styles/normal = SubResource("StyleBoxFlat_tk3ca")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m5typ")
 theme_override_styles/hover = SubResource("StyleBoxFlat_uaqor")
+disabled = true
 alignment = 1
 selected = 0
 item_count = 1
@@ -493,6 +495,7 @@ theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824,
 theme_override_styles/normal = SubResource("StyleBoxFlat_orkkd")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_to73g")
 theme_override_styles/hover = SubResource("StyleBoxFlat_x5nhi")
+disabled = true
 alignment = 1
 selected = 0
 item_count = 1
@@ -846,9 +849,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_j2jm4")
 text = "ON"
 
 [node name="back-button" type="Button" parent="." unique_id=950356063]
-offset_left = 474.0
+offset_left = 476.0
 offset_top = 520.0
-offset_right = 674.0
+offset_right = 676.0
 offset_bottom = 580.0
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)

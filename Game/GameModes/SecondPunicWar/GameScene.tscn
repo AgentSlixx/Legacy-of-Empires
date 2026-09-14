@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://bc1jt8e6o7yjo"]
 
 [ext_resource type="Texture2D" uid="uid://gh1o3c0a5wbk" path="res://GameModes/SecondPunicWar/GameMap_master_4x.png" id="1_ipic2"]
+[ext_resource type="Script" uid="uid://8hmkaq4sneyb" path="res://GameModes/SecondPunicWar/second-punic-war-script.gd" id="1_s4qgm"]
 [ext_resource type="Script" uid="uid://b2yrno7sevxf6" path="res://MapCamera2D.gd" id="2_s4qgm"]
 
 [node name="Game" type="Node2D" unique_id=1574773458]
+script = ExtResource("1_s4qgm")
 
 [node name="Map" type="Sprite2D" parent="." unique_id=879028388]
 position = Vector2(576, 324)

@@ -492,9 +492,9 @@ scale = Vector2(0.7457682, 0.6254882)
 texture = ExtResource("2_ymx52")
 
 [node name="ControlsPanel" type="Panel" parent="." unique_id=1830694967]
-offset_left = 161.0
+offset_left = 158.0
 offset_top = 120.0
-offset_right = 996.0
+offset_right = 993.0
 offset_bottom = 540.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ymx52")
 
@@ -851,9 +851,9 @@ theme_override_font_sizes/font_size = 15
 text = "Select a key and press a new key to rebind the action."
 
 [node name="back-button" type="Button" parent="." unique_id=483864075]
-offset_left = 477.0
+offset_left = 476.0
 offset_top = 552.0
-offset_right = 677.0
+offset_right = 676.0
 offset_bottom = 612.0
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)

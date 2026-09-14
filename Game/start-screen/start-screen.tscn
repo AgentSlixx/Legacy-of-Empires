@@ -222,7 +222,7 @@ corner_detail = 20
 bg_color = Color(0.6, 0.6, 0.6, 0)
 corner_detail = 10
 
-[node name="background" type="Node2D" unique_id=1707268200]
+[node name="start-screen" type="Node2D" unique_id=1707268200]
 script = ExtResource("1_epxgh")
 
 [node name="bckgd-photo" type="Sprite2D" parent="." unique_id=1447430613]
@@ -287,7 +287,7 @@ scale = Vector2(0.69381106, 0.2903683)
 texture = ExtResource("9_yfr0c")
 
 [node name="title" type="Sprite2D" parent="." unique_id=2023229780]
-position = Vector2(580.5, 121.00001)
+position = Vector2(576, 121)
 scale = Vector2(0.4065934, 0.2804428)
 texture = ExtResource("10_e3qtb")
 
@@ -307,9 +307,9 @@ centered = false
 offset = Vector2(5, -2)
 
 [node name="continue-campaign-button" type="Button" parent="." unique_id=805300461]
-offset_left = 401.0
+offset_left = 395.0
 offset_top = 215.0
-offset_right = 763.0
+offset_right = 757.0
 offset_bottom = 261.0
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
@@ -325,9 +325,9 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_i5w3n")
 text = "CONTINUE CAMPAIGN"
 
 [node name="select-scenario-button" type="Button" parent="." unique_id=651655506]
-offset_left = 401.0
+offset_left = 395.0
 offset_top = 271.0
-offset_right = 763.0
+offset_right = 757.0
 offset_bottom = 317.0
 theme = SubResource("Theme_lcuor")
 theme_type_variation = &"FlatButton"
@@ -343,9 +343,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_oqq08")
 text = "SELECT SCENARIO"
 
 [node name="load-game-button" type="Button" parent="." unique_id=1709064297]
-offset_left = 401.0
+offset_left = 395.0
 offset_top = 327.0
-offset_right = 763.0
+offset_right = 757.0
 offset_bottom = 373.0
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
@@ -360,9 +360,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wwee4")
 text = "LOAD GAME"
 
 [node name="settings-game-button" type="Button" parent="." unique_id=143829730]
-offset_left = 401.0
+offset_left = 395.0
 offset_top = 383.0
-offset_right = 763.0
+offset_right = 757.0
 offset_bottom = 429.0
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
@@ -377,9 +377,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_jtmo6")
 text = "SETTINGS"
 
 [node name="credits-game-button" type="Button" parent="." unique_id=203469794]
-offset_left = 401.0
+offset_left = 395.0
 offset_top = 439.0
-offset_right = 763.0
+offset_right = 757.0
 offset_bottom = 485.0
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
@@ -394,9 +394,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_dysuc")
 text = "CREDITS"
 
 [node name="exit-game-button" type="Button" parent="." unique_id=1056459422]
-offset_left = 401.0
+offset_left = 395.0
 offset_top = 495.0
-offset_right = 763.0
+offset_right = 757.0
 offset_bottom = 541.0
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
@@ -411,9 +411,9 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_6gl2x")
 text = "EXIT"
 
 [node name="quote-label" type="RichTextLabel" parent="." unique_id=146640226]
-offset_left = 405.0
+offset_left = 395.0
 offset_top = 562.0
-offset_right = 745.0
+offset_right = 735.0
 offset_bottom = 652.0
 theme_override_colors/default_color = Color(0.84705883, 0.70980394, 0.4, 1)
 theme_override_constants/paragraph_separation = 2
