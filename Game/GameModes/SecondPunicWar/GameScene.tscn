@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://gh1o3c0a5wbk" path="res://GameModes/SecondPunicWar/GameMap_master_4x.png" id="1_ipic2"]
 [ext_resource type="Script" uid="uid://8hmkaq4sneyb" path="res://GameModes/SecondPunicWar/second-punic-war-script.gd" id="1_s4qgm"]
 [ext_resource type="Script" uid="uid://b2yrno7sevxf6" path="res://MapCamera2D.gd" id="2_s4qgm"]
+[ext_resource type="Texture2D" uid="uid://vpqlf10l2ni3" path="res://GameModes/SecondPunicWar/second-punic-war-assets/standing-army-icon-asset .png" id="4_aj3qx"]
+[ext_resource type="Texture2D" uid="uid://fdlabjwt11oa" path="res://GameModes/SecondPunicWar/second-punic-war-assets/marching-army-icon-asset.png" id="5_ds0mh"]
 
 [node name="Game" type="Node2D" unique_id=1574773458]
 script = ExtResource("1_s4qgm")
@@ -20,5 +22,19 @@ limit_top = 0
 limit_right = 1152
 limit_bottom = 648
 script = ExtResource("2_s4qgm")
-zoom_max = 2.0
+zoom_max = 4.0
+pan_speed = 1000.0
 drag_inertia = 1.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1186616158]
+
+[node name="standing-player-icon" type="Sprite2D" parent="Node2D" unique_id=215353651]
+position = Vector2(468, 218.00002)
+scale = Vector2(0.05484689, 0.04111113)
+texture = ExtResource("4_aj3qx")
+offset = Vector2(0, -300)
+
+[node name="marching-player-icon" type="Sprite2D" parent="Node2D" unique_id=1846658094]
+position = Vector2(-61, 233)
+scale = Vector2(0.05484689, 0.04111113)
+texture = ExtResource("5_ds0mh")

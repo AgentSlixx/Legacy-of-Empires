@@ -1,7 +1,7 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1789401420
-export_presets.cfg::TextFile::-1::1789391990::0::1::::<><><>0<>0<><>::
-MapCamera2D.gd::GDScript::4332120717799882061::1789211248::0::1::::MapCamera2D<>Camera2D<><>0<>0<><>::
+::res://::1789577047
+export_presets.cfg::TextFile::-1::1789412843::0::1::::<><><>0<>0<><>::
+MapCamera2D.gd::GDScript::4332120717799882061::1789412623::0::1::::MapCamera2D<>Camera2D<><>0<>0<><>::
 new_game_option.gd::GDScript::6856262101669108523::1784808028::0::1::::<>Node<><>0<>0<><>::
 ::res://credits-screen/::1789389699
 credits-screen-script.gd::GDScript::1265040720512918592::1789387836::0::1::::<>Node<><>0<>0<><>::
@@ -105,10 +105,13 @@ Xolonium-Bold.ttf::FontFile::4167985684614408575::1785141791::1785141818::1::::<
 Xolonium-Regular.ttf::FontFile::3951762632438403737::1785141791::1785141818::1::::<><><>0<>0<>d819e97ed84d50c77ecc3c44523191a1<>res://.godot/imported/Xolonium-Regular.ttf-0a3bbbcb90abd7408cc211dcd1c5c260.fontdata::
 ::res://GameModes/::1789217074
 GameMapOld.png::CompressedTexture2D::7959567486227814157::1789217000::1789217074::1::::<><><>0<>0<>e430feead1868c4cd513b0bdfe3543b1<>res://.godot/imported/GameMapOld.png-e57b1a01c893865070da067cbb7674bc.ctex::
-::res://GameModes/SecondPunicWar/::1789388909
+::res://GameModes/SecondPunicWar/::1789577181
 GameMap_master_4x.png::CompressedTexture2D::437188823913712404::1789217000::1789217072::1::::<><><>0<>0<>a529df27f86ce033f16a59a1a3a24ac5<>res://.godot/imported/GameMap_master_4x.png-47b76a07737368d1e8164e7e19aeaf9a.ctex::
-GameScene.tscn::PackedScene::2581054316472076256::1789388909::0::1::::<><><>0<>0<><>::uid://gh1o3c0a5wbk::::res://GameModes/SecondPunicWar/GameMap_master_4x.png<>uid://8hmkaq4sneyb::::res://GameModes/SecondPunicWar/second-punic-war-script.gd<>uid://b2yrno7sevxf6::::res://MapCamera2D.gd
+GameScene.tscn::PackedScene::2581054316472076256::1789412623::0::1::::<><><>0<>0<><>::uid://gh1o3c0a5wbk::::res://GameModes/SecondPunicWar/GameMap_master_4x.png<>uid://8hmkaq4sneyb::::res://GameModes/SecondPunicWar/second-punic-war-script.gd<>uid://b2yrno7sevxf6::::res://MapCamera2D.gd
 second-punic-war-script.gd::GDScript::2331428972244802025::1789388901::0::1::::<>Node<><>0<>0<><>::
+::res://GameModes/SecondPunicWar/second-punic-war-assets/::1789577192
+marching-army-icon-asset.png::CompressedTexture2D::357805305825384388::1789577192::1789577193::1::::<><><>0<>0<>846cf2605f7b8304477382ad9ca1d793<>res://.godot/imported/marching-army-icon-asset.png-c43cb94ba0bb848c81990a263c4a9dbb.ctex::
+standing-army-icon-asset .png::CompressedTexture2D::1505922802260121352::1789577192::1789577193::1::::<><><>0<>0<>9a308cdaef3eec2688f130fe3dff763d<>res://.godot/imported/standing-army-icon-asset .png-c1f5daad015175178773181d87f13688.ctex::
 ::res://GameModes/SecondPunicWar/tiles/::1789217061
 map_0_0.png::CompressedTexture2D::3533108330270592866::1789217000::1789217052::1::::<><><>0<>0<>ae05f60629636c334d9f7c4a1cf97572<>res://.godot/imported/map_0_0.png-4a32ecb1803542a151c3200b2e024882.ctex::
 map_0_1.png::CompressedTexture2D::7732927103071497032::1789217000::1789217054::1::::<><><>0<>0<>e9c1857ba13100bd83d952f6daf67b41<>res://.godot/imported/map_0_1.png-ffc7ca09ea24a1388330f85195d38370.ctex::
@@ -123,13 +126,13 @@ authors.json::JSON::-1::1785143449::0::1::::<><><>0<>0<><>::
 historical_facts.json::JSON::-1::1785143449::0::1::::<><><>0<>0<><>::
 loading_tips.json::JSON::-1::1785143449::0::1::::<><><>0<>0<><>::
 quotes.json::JSON::-1::1785186714::0::1::::<><><>0<>0<><>::
-::res://map-selection-screen/::1789387828
-map-selection-screen.tscn::PackedScene::8444241258994845440::1789387565::0::1::::<><><>0<>0<><>::uid://fdksrdd6ucbv::::res://map-selection-screen/map_selection_screen.gd
+::res://map-selection-screen/::1789470570
+map-selection-screen.tscn::PackedScene::8444241258994845440::1789470570::0::1::::<><><>0<>0<><>::uid://fdksrdd6ucbv::::res://map-selection-screen/map_selection_screen.gd<>uid://k6p52j7nny4::::res://map-selection-screen/map-selection-screen-assets/istockphoto-1346709051-612x612.jpg
 map_selection_screen.gd::GDScript::357777563380180847::1789387828::0::1::::<>Node2D<><>0<>0<><>::
 ::res://map-selection-screen/map-selection-screen-assets/::1789156708
 istockphoto-1346709051-612x612.jpg::CompressedTexture2D::22554409087363529::1784735903::1789156708::1::::<><><>0<>0<>fe16cc2f7d76f63efbd108c5a2036ef1<>res://.godot/imported/istockphoto-1346709051-612x612.jpg-24e11746c52bf90dd6e768da921c19a4.ctex::
-::res://scripts/::1789391897
-HandleScreenSizeAndUI.gd::GDScript::80033202880939984::1789391896::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/::1789412483
+HandleScreenSizeAndUI.gd::GDScript::80033202880939984::1789412483::0::1::::<>Node<><>0<>0<><>::
 RandomTextScript.gd::GDScript::4087543386294069309::1785149796::0::1::::<>Node<><>0<>0<><>::
 ::res://settings/::1789201144
 ::res://settings/audio-screen/::1789389449
@@ -180,9 +183,9 @@ language-icon-asset.png::CompressedTexture2D::3046924532776618897::1785430318::1
 restore-defaults-icon-asset.png::CompressedTexture2D::9108884109017003965::1785429822::1785573412::1::::<><><>0<>0<>e04ddf16333cd131def8a314b5ebf513<>res://.godot/imported/restore-defaults-icon-asset.png-2fcd2c65035414f9e6c7b6e34c4a7b21.ctex::
 settings-screen-background-asset.png::CompressedTexture2D::1575924806126505727::1785423127::1785574011::1::::<><><>0<>0<>008536876b4dbcf5b99a84314bacb7f4<>res://.godot/imported/settings-screen-background-asset.png-13b555af70dd9351b3c7546f87ed95b0.ctex::
 volume-icon-asset.png::CompressedTexture2D::3094271767336236507::1785427575::1785573413::1::::<><><>0<>0<>2345ed574d90066900bf325aaf2c7dbe<>res://.godot/imported/volume-icon-asset.png-70e7a8291261e128782d1d1752b58402.ctex::
-::res://start-screen/::1789389371
-smoke_1.gdshader::Shader::5329424236319014286::1789379420::0::1::::<><><>0<>0<><>::
-start-screen.gdshader::Shader::4376660003785099644::1789379420::0::1::::<><><>0<>0<><>::
+::res://start-screen/::1789470570
+smoke_1.gdshader::Shader::5329424236319014286::1789470570::0::1::::<><><>0<>0<><>::
+start-screen.gdshader::Shader::4376660003785099644::1789470570::0::1::::<><><>0<>0<><>::
 start-screen.tscn::PackedScene::2344789841409544261::1789389371::0::1::::<><><>0<>0<><>::uid://carfhujlvonsb::::res://start-screen/start_screen.gd<>uid://dffeah6iht6g1::::res://start-screen/start-screen-assets/start-screen-background.png<>uid://ch6u3rlytk2gw::::res://start-screen/smoke_1.gdshader<>uid://drwfnnuyn8g81::::res://start-screen/start-screen-assets/smoke-asset-4.png<>uid://c4vs1w4b5ws4u::::res://start-screen/start-screen-assets/smoke-asset-7.png<>uid://2sdatswfwt07::::res://start-screen/start-screen-assets/smoke-asset-8.png<>uid://oiflnutn0fun::::res://start-screen/start-screen-assets/smoke-asset-5.png<>uid://cfi7x1kba4kf1::::res://start-screen/start-screen-assets/smoke-asset-9.png<>uid://bv33nlnn4blml::::res://start-screen/start-screen-assets/smoke-asset-10.png<>uid://by0kun1ci8ajb::::res://start-screen/start-screen-assets/title-asset.png<>uid://jnwv2sfi7a03::::res://start-screen/start-screen-assets/pole.png<>uid://b3mc7lfg00gw7::::res://start-screen/start-screen.gdshader<>uid://ccjuho31hshpw::::res://start-screen/start-screen-assets/flag.png<>uid://blc0j1suisswr::::res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/LinLibertineOTF_5.3.0_2012_07_02/LinLibertine_M.otf
 start_screen.gd::GDScript::4808252939625046137::1789385511::0::1::::<>Node2D<><>0<>0<><>::
 ::res://start-screen/start-screen-assets/::1789156509
