@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://fdksrdd6ucbv" path="res://scenario-selection-screen/scenario-selection-screen-script.gd" id="1_r3xcw"]
 [ext_resource type="Texture2D" uid="uid://k6p52j7nny4" path="res://scenario-selection-screen/scenario-selection-screen-assets/scenario-selection-screen-background-asset.jpg" id="2_r3xcw"]
 [ext_resource type="FontFile" uid="uid://b0nad6i1q02ed" path="res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf" id="3_m2mpk"]
-[ext_resource type="Texture2D" uid="uid://ckthk3slv3u8y" path="res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/overview.PNG" id="4_chcid"]
+[ext_resource type="Texture2D" uid="uid://dpvlh4t6llpdx" path="res://scenario-selection-screen/scenario-selection-screen-assets/100-years-war-scenario-image.jpg" id="4_chcid"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3xcw"]
 bg_color = Color(0, 0, 0, 0.73)
@@ -67,11 +67,8 @@ bg_color = Color(0, 0, 0, 0.73)
 border_width_bottom = 1
 border_color = Color(0.6421665, 0.5657284, 0.38109186, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j10ka"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yavm4"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
 border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
 corner_radius_top_left = 4
 corner_radius_top_right = 4
@@ -84,6 +81,14 @@ border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j10ka"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
 corner_radius_top_left = 4
 corner_radius_top_right = 4
@@ -308,6 +313,8 @@ theme_override_constants/separation = 4
 
 [node name="chronicles-label" type="Label" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer/TextHBoxContainer" unique_id=577042313]
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(15, 5)
 offset_transform_visual_only = false
 theme_override_colors/font_color = Color(0.84313726, 0.69803923, 0.4117647, 1)
 theme_override_font_sizes/font_size = 13
@@ -323,6 +330,9 @@ theme_override_constants/separation = 4
 
 [node name="chose-campaign-label" type="Label" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer/TextHBoxContainer2" unique_id=1653773836]
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(15, 0)
+offset_transform_visual_only = false
 theme_override_colors/font_color = Color(0.8870018, 0.85827667, 0.8640501, 1)
 theme_override_font_sizes/font_size = 23
 text = "CHOSE CAMPAIGN"
@@ -338,6 +348,7 @@ theme_override_constants/separation = 4
 [node name="text-label" type="Label" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer/TextHBoxContainer3" unique_id=1899057368]
 layout_mode = 2
 offset_transform_enabled = true
+offset_transform_position = Vector2(15, 0)
 offset_transform_visual_only = false
 theme_override_colors/font_color = Color(0.8870018, 0.85827667, 0.8640501, 1)
 theme_override_font_sizes/font_size = 13
@@ -448,6 +459,8 @@ theme_override_constants/separation = 26
 alignment = 1
 
 [node name="scenario-photo-texture-rect" type="TextureRect" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer" unique_id=1654573663]
+custom_minimum_size = Vector2(642, 150)
+custom_maximum_size = Vector2(642, 150)
 layout_mode = 2
 texture = ExtResource("4_chcid")
 
@@ -464,6 +477,7 @@ offset_left = 15.0
 offset_top = 5.0
 offset_right = 96.0
 offset_bottom = 25.0
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
 theme_override_fonts/font = ExtResource("3_m2mpk")
 theme_override_font_sizes/font_size = 15
 text = "Campaign"
@@ -532,7 +546,7 @@ theme_override_font_sizes/bold_font_size = 14
 theme_override_font_sizes/bold_italics_font_size = 14
 theme_override_font_sizes/italics_font_size = 14
 theme_override_font_sizes/mono_font_size = 14
-theme_override_styles/normal = SubResource("StyleBoxFlat_j10ka")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yavm4")
 bbcode_enabled = true
 text = " ERA"
 tab_size = 5
@@ -541,6 +555,8 @@ tab_size = 5
 custom_minimum_size = Vector2(194, 50)
 clip_contents = false
 layout_mode = 0
+offset_right = 220.0
+offset_bottom = 50.0
 offset_transform_enabled = true
 offset_transform_visual_only = false
 theme_override_fonts/normal_font = ExtResource("3_m2mpk")
@@ -548,15 +564,18 @@ theme_override_fonts/bold_font = ExtResource("3_m2mpk")
 theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
 theme_override_fonts/italics_font = ExtResource("3_m2mpk")
 theme_override_fonts/mono_font = ExtResource("3_m2mpk")
-theme_override_font_sizes/normal_font_size = 17
-theme_override_font_sizes/bold_font_size = 17
-theme_override_font_sizes/bold_italics_font_size = 17
-theme_override_font_sizes/italics_font_size = 17
-theme_override_font_sizes/mono_font_size = 17
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 15
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/mono_font_size = 15
 theme_override_styles/normal = SubResource("StyleBoxFlat_8y1yn")
 bbcode_enabled = true
 text = " 
  AGE OF HEROES"
+fit_content = true
+scroll_active = false
+autowrap_mode = 1
 tab_size = 5
 
 [node name="region-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer" unique_id=112936002]
@@ -582,9 +601,11 @@ text = " REGION"
 tab_size = 5
 
 [node name="region-description-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer/region-rich-text-label" unique_id=1603278308]
-custom_minimum_size = Vector2(194, 50)
+custom_minimum_size = Vector2(200, 50)
 clip_contents = false
 layout_mode = 0
+offset_right = 220.0
+offset_bottom = 50.0
 offset_transform_enabled = true
 offset_transform_visual_only = false
 theme_override_fonts/normal_font = ExtResource("3_m2mpk")
@@ -592,15 +613,16 @@ theme_override_fonts/bold_font = ExtResource("3_m2mpk")
 theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
 theme_override_fonts/italics_font = ExtResource("3_m2mpk")
 theme_override_fonts/mono_font = ExtResource("3_m2mpk")
-theme_override_font_sizes/normal_font_size = 17
-theme_override_font_sizes/bold_font_size = 17
-theme_override_font_sizes/bold_italics_font_size = 17
-theme_override_font_sizes/italics_font_size = 17
-theme_override_font_sizes/mono_font_size = 17
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 15
+theme_override_font_sizes/bold_italics_font_size = 15
+theme_override_font_sizes/italics_font_size = 15
+theme_override_font_sizes/mono_font_size = 15
 theme_override_styles/normal = SubResource("StyleBoxFlat_3pg4h")
 bbcode_enabled = true
 text = "  
  AEGEAN SEA"
+autowrap_mode = 0
 tab_size = 5
 
 [node name="difficulty-option-button" type="OptionButton" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer" unique_id=1767208365]
@@ -661,6 +683,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yn3m5")
 bbcode_enabled = true
 text = "* OBJECTIVE - "
 tab_size = 5
+vertical_alignment = 1
 
 [node name="objective-description-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/ObejctiveInfoHBoxContainer/objective-rich-text-label" unique_id=2143024708]
 custom_minimum_size = Vector2(194, 20)
@@ -687,8 +710,11 @@ theme_override_font_sizes/mono_font_size = 12
 theme_override_styles/normal = SubResource("StyleBoxFlat_tn8fj")
 bbcode_enabled = true
 text = "BREAK THE WALLS OF TROY, OR HOLD THEM AGAINST ENEMY INVADERS"
+fit_content = true
+scroll_active = false
 autowrap_mode = 2
 tab_size = 5
+vertical_alignment = 1
 
 [node name="scenario-label2" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=93368508]
 layout_mode = 2
@@ -704,6 +730,8 @@ offset_right = 657.0
 offset_bottom = 488.0
 
 [node name="campaign-files-label" type="Label" parent="SceneSelectionInfoPanel/CampaignHBoxContainer" unique_id=1421518675]
+custom_minimum_size = Vector2(185, 0)
+custom_maximum_size = Vector2(185, -1)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_m2mpk")
 theme_override_font_sizes/font_size = 12
@@ -714,7 +742,7 @@ custom_minimum_size = Vector2(220, 50)
 custom_maximum_size = Vector2(-1, 50)
 layout_mode = 2
 offset_transform_enabled = true
-offset_transform_position = Vector2(250, 5)
+offset_transform_position = Vector2(235, 5)
 offset_transform_visual_only = false
 theme_override_fonts/font = ExtResource("3_m2mpk")
 theme_override_font_sizes/font_size = 16
@@ -742,3 +770,9 @@ theme_override_font_sizes/font_size = 15
 text = "LE • BUILD YOUR OWN HISTORY"
 
 [connection signal="pressed" from="TitleSceneSelectionPanel/ScenarioSelectionBackButtonsVBoxContainer/back-button" to="." method="_on_backbutton_pressed"]
+[connection signal="pressed" from="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/TrojanWarHBoxContainer/trojan-war-button" to="." method="_on_trojanwarbutton_pressed"]
+[connection signal="pressed" from="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/100YearsWarHBoxContainer/100-years-war-button" to="." method="_on_yearswarbutton_pressed"]
+[connection signal="pressed" from="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/WarsofAlexandertheGreatHBoxContainer/wars-of-alexander-the-great-button" to="." method="_on_warsofalexanderthegreatbutton_pressed"]
+[connection signal="pressed" from="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/SecondPunicWarHBoxContainer/second-punic-war-button" to="." method="_on_secondpunicwarbutton_pressed"]
+[connection signal="pressed" from="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/TheFirstCrusadeHBoxContainer/the-first-crusade-button" to="." method="_on_thefirstcrusadebutton_pressed"]
+[connection signal="pressed" from="SceneSelectionInfoPanel/CampaignHBoxContainer/begin-campaign-button" to="." method="_on_begincampaignbutton_pressed"]
