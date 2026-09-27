@@ -7,6 +7,7 @@ var tracked_elements := {}
 var background: Node = null
 var map: Node = null
 var current_scene: Node = null
+var party: Node2D = null
 
 var camera: MapCamera2D = null
 
@@ -39,6 +40,13 @@ func _collect_all_elements(current_node: Node) -> void:
 				#we put it in is_background
 
 			var is_map = (child.name.contains("Map") or child.name.contains("map"))
+			
+			var is_party  = (child.name.contains("Party") or child.name.contains("party")
+				or child.name.contains("Army") or child.name.contains("army"))
+			#Ok, so basically, party will be excluded from screen resize calculations
+			#So in the future when making player or AI armies/parties on the map
+			#Make sure they contain any of these strings in their names, when 
+			#adding them as UI elements through godot
 
 			if is_background: #if current_node is background
 				background = child
@@ -46,10 +54,10 @@ func _collect_all_elements(current_node: Node) -> void:
 				map = child
 			elif child is MapCamera2D:
 				camera = child
+			elif is_party:
+				party = child 
 			else:
-				_save_initial_data(child)
-			#else: #we add it to the list of elements if its other element
-				#_save_initial_data(child)
+				_save_initial_data(child) #we add it to the list of elements if its other element
 		#We don't need recursive here, just grab parent node and all its kids 
 		#will move and change together with parent
 		#if child.get_child_count() > 0:
@@ -117,18 +125,6 @@ func _update_camera_limits() -> void:
 
 		camera.clamp_offset()
 
-#We call this function every time window size changes
-func _on_window_resized() -> void:
-	#We take size of the new resized window
-	var screen_size = get_viewport().get_visible_rect().size
-	#Reposition background according to the new screen size
-	_reposition_background(screen_size)
-	_reposition_map(screen_size)
-	_update_camera_limits()
-	#Reposition every element on the scene according to the new size
-	for node in tracked_elements.keys():
-		_reposition_element(node, screen_size)
-
 #Function that does reposition of other elements but background
 func _reposition_element(node: Node, screen_size: Vector2) -> void:
 
@@ -168,3 +164,15 @@ func _reposition_element(node: Node, screen_size: Vector2) -> void:
 		node.position = Vector2(new_center_x - node.size.x / 2.0, new_center_y - node.size.y / 2.0)
 	else:
 		node.position = Vector2(new_center_x, new_center_y)
+
+#We call this function every time window size changes
+func _on_window_resized() -> void:
+	#We take size of the new resized window
+	var screen_size = get_viewport().get_visible_rect().size
+	#Reposition background according to the new screen size
+	_reposition_background(screen_size)
+	#_reposition_map(screen_size)
+	_update_camera_limits()
+	#Reposition every element on the scene according to the new size
+	for node in tracked_elements.keys():
+		_reposition_element(node, screen_size)

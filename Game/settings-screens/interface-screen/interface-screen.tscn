@@ -1,0 +1,478 @@
+[gd_scene format=3 uid="uid://cr8la3wmouop1"]
+
+[ext_resource type="Script" uid="uid://dr0r7ee7joaiq" path="res://settings-screens/interface-screen/interface-screen-script.gd" id="1_p03gn"]
+[ext_resource type="Texture2D" uid="uid://cs5r6j14tn0bd" path="res://settings-screens/interface-screen/interface-screen-assets/interface-screen-background-asset.png" id="2_m2cs5"]
+[ext_resource type="Texture2D" uid="uid://bvtn63lynbiis" path="res://settings-screens/interface-screen/interface-screen-assets/previev-map-asset.png" id="3_2isft"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2isft"]
+bg_color = Color(0, 0, 0, 0.8)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0q6it"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nbx"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2cs5"]
+bg_color = Color(0, 0, 0, 0.7294118)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dr4yq"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwh72"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0phkg"]
+bg_color = Color(0.84705883, 0.69803923, 0.4117647, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 9
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okcjr"]
+bg_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ruvm6"]
+bg_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4v8bo"]
+bg_color = Color(0.105882354, 0.105882354, 0.105882354, 0.6)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v1tp"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xwf6v"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i1uc"]
+bg_color = Color(0.106126174, 0.106126174, 0.106126174, 0.6)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp0mf"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fayfe"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="InterfaceScreen" type="Node2D" unique_id=936633987]
+script = ExtResource("1_p03gn")
+
+[node name="background-image" type="Sprite2D" parent="." unique_id=350351613]
+position = Vector2(576.25, 323.75)
+scale = Vector2(0.6879114, 0.6849097)
+texture = ExtResource("2_m2cs5")
+
+[node name="back-button" type="Button" parent="." unique_id=1769417682]
+custom_minimum_size = Vector2(200, 50)
+custom_maximum_size = Vector2(200, 200)
+offset_left = 476.0
+offset_top = 560.0
+offset_right = 676.0
+offset_bottom = 610.0
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2isft")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0q6it")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i2nbx")
+text = "BACK 
+"
+
+[node name="SettingsPanel" type="Panel" parent="." unique_id=1131353417]
+offset_left = 54.0
+offset_top = 140.0
+offset_right = 444.0
+offset_bottom = 546.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2cs5")
+
+[node name="SettingsVBoxContainer" type="VBoxContainer" parent="SettingsPanel" unique_id=547944882]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 383.0
+offset_bottom = 245.0
+theme_override_constants/separation = 10
+
+[node name="settings-text-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer" unique_id=828480167]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_dr4yq")
+text = "SETTINGS"
+
+[node name="UIScaleHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=44988475]
+layout_mode = 2
+
+[node name="ui-scale-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/UIScaleHBoxContainer" unique_id=1418033270]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(200, -1)
+propagate_maximum_size = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_pwh72")
+text = "UI Scale"
+
+[node name="ui-scale-slider" type="HSlider" parent="SettingsPanel/SettingsVBoxContainer/UIScaleHBoxContainer" unique_id=683962710]
+custom_minimum_size = Vector2(135, 30)
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_styles/slider = SubResource("StyleBoxFlat_0phkg")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_okcjr")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_ruvm6")
+ticks_position = 3
+
+[node name="ui-scale-value-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/UIScaleHBoxContainer" unique_id=1642769763]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+text = "0"
+
+[node name="MinimapScaleHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=169775710]
+layout_mode = 2
+
+[node name="minimap-scale-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/MinimapScaleHBoxContainer" unique_id=552867843]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(200, -1)
+propagate_maximum_size = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Minimap Scale"
+
+[node name="minimap-scale-slider" type="HSlider" parent="SettingsPanel/SettingsVBoxContainer/MinimapScaleHBoxContainer" unique_id=1602125083]
+custom_minimum_size = Vector2(135, 30)
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_0phkg")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_okcjr")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_ruvm6")
+ticks_position = 3
+
+[node name="minimap-scale-value-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/MinimapScaleHBoxContainer" unique_id=467123859]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+text = "0"
+
+[node name="TooltipDelayHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=1855966883]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="tooltip-delay-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/TooltipDelayHBoxContainer" unique_id=1519540530]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Tooltip Delay"
+
+[node name="tooltip-delay-option-button" type="OptionButton" parent="SettingsPanel/SettingsVBoxContainer/TooltipDelayHBoxContainer" unique_id=1128791072]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_4v8bo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8v1tp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xwf6v")
+alignment = 1
+selected = 0
+item_count = 1
+popup/item_0/text = "0 s"
+popup/item_0/id = 0
+
+[node name="ShowFPSHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=1766303020]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-fps-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowFPSHBoxContainer" unique_id=1032234095]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show FPS"
+
+[node name="show-fps-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowFPSHBoxContainer" unique_id=687848533]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="ShowUnitHealthHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=486482854]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-unit-health-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowUnitHealthHBoxContainer" unique_id=1512032320]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show Unit Health"
+
+[node name="show-unit-health-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowUnitHealthHBoxContainer" unique_id=201042602]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="ShowCityNamesHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=463919539]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-city-names-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowCityNamesHBoxContainer" unique_id=858766462]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show City Names"
+
+[node name="show-city-names-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowCityNamesHBoxContainer" unique_id=1291190694]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="ShowProvinceNamesHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=658631899]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-province-names-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowProvinceNamesHBoxContainer" unique_id=210710328]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show Province Names"
+
+[node name="show-province-names-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowProvinceNamesHBoxContainer" unique_id=1618755501]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="ShowGridHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=1136099088]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-grid-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowGridHBoxContainer" unique_id=1736797932]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show Grid"
+
+[node name="show-grid-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowGridHBoxContainer" unique_id=686881982]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="ShowArmyRangeHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=1851192984]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-army-range-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowArmyRangeHBoxContainer" unique_id=472884308]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show Army Range"
+
+[node name="show-army-range-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowArmyRangeHBoxContainer" unique_id=991472272]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="ShowNotificationsHBoxContainer" type="HBoxContainer" parent="SettingsPanel/SettingsVBoxContainer" unique_id=1051560816]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="show-notifications-label" type="Label" parent="SettingsPanel/SettingsVBoxContainer/ShowNotificationsHBoxContainer" unique_id=288033085]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "Show Notifications"
+
+[node name="show-notifications-button" type="Button" parent="SettingsPanel/SettingsVBoxContainer/ShowNotificationsHBoxContainer" unique_id=1353332816]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i1uc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lp0mf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fayfe")
+text = "ON"
+
+[node name="PreviewPanel" type="Panel" parent="." unique_id=1628085251]
+offset_left = 498.0
+offset_top = 140.0
+offset_right = 1098.0
+offset_bottom = 546.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2cs5")
+
+[node name="PreviewVBoxContainer" type="VBoxContainer" parent="PreviewPanel" unique_id=1507705962]
+custom_minimum_size = Vector2(586, 400)
+layout_mode = 0
+offset_left = 7.0
+offset_right = 383.0
+offset_bottom = 334.0
+theme_override_constants/separation = 10
+
+[node name="preview-text-label" type="Label" parent="PreviewPanel/PreviewVBoxContainer" unique_id=584508501]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_dr4yq")
+text = "Preview of interface elements"
+
+[node name="preview-map-texture-rect" type="TextureRect" parent="PreviewPanel/PreviewVBoxContainer" unique_id=207163330]
+custom_minimum_size = Vector2(200, 362)
+layout_mode = 2
+texture = ExtResource("3_2isft")
+expand_mode = 2
+
+[connection signal="pressed" from="back-button" to="." method="_on_backbutton_pressed"]
+[connection signal="value_changed" from="SettingsPanel/SettingsVBoxContainer/UIScaleHBoxContainer/ui-scale-slider" to="." method="_on_uiscaleslider_value_changed"]
+[connection signal="value_changed" from="SettingsPanel/SettingsVBoxContainer/MinimapScaleHBoxContainer/minimap-scale-slider" to="." method="_on_minimapscaleslider_value_changed"]

@@ -1,0 +1,194 @@
+[gd_scene format=3 uid="uid://dumbbepqm4inn"]
+
+[ext_resource type="Script" uid="uid://dgbyqq1fo5bqv" path="res://settings-screens/settings-screen/settings-screen-script.gd" id="1_42u2d"]
+[ext_resource type="Texture2D" uid="uid://wpnisrsqmvy2" path="res://settings-screens/settings-screen/settings-screen-assets/settings-screen-background-asset.png" id="2_42u2d"]
+[ext_resource type="Texture2D" uid="uid://bkc5g60iau41t" path="res://settings-screens/settings-screen/settings-screen-assets/volume-icon-asset.png" id="3_kc0ev"]
+[ext_resource type="Texture2D" uid="uid://b0ifngnbhljtl" path="res://settings-screens/settings-screen/settings-screen-assets/graphics-icon-asset.png" id="4_n7ol8"]
+[ext_resource type="Texture2D" uid="uid://bb7su7jph46p" path="res://settings-screens/settings-screen/settings-screen-assets/controls-icon-asset.png" id="5_4kxj8"]
+[ext_resource type="Texture2D" uid="uid://dkmkmygmewj8r" path="res://settings-screens/settings-screen/settings-screen-assets/gameplay-icon-asset.png" id="6_nyhsd"]
+[ext_resource type="Texture2D" uid="uid://dus4wrj2s61uy" path="res://settings-screens/settings-screen/settings-screen-assets/interface-icon-asset.png" id="7_l3few"]
+[ext_resource type="Texture2D" uid="uid://bjn7nwua4pu1f" path="res://settings-screens/settings-screen/settings-screen-assets/language-icon-asset.png" id="8_e7sh2"]
+[ext_resource type="Texture2D" uid="uid://d21n8w7xf8hsf" path="res://settings-screens/settings-screen/settings-screen-assets/restore-defaults-icon-asset.png" id="9_sr5uf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcuor"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j10ka"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5pom5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 10
+border_color = Color(1, 0.8627451, 0.47058824, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_bottom_left = 8
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3e7dv"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 10
+border_color = Color(1, 0.8627451, 0.47058824, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_bottom_left = 8
+corner_detail = 20
+
+[node name="SettingsScreen" type="Node2D" unique_id=360762715]
+script = ExtResource("1_42u2d")
+
+[node name="background-image" type="Sprite2D" parent="." unique_id=1557695871]
+position = Vector2(575, 323)
+scale = Vector2(0.8708459, 0.54461277)
+texture = ExtResource("2_42u2d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1186616621]
+offset_left = 44.0
+offset_top = 88.0
+offset_right = 371.0
+offset_bottom = 615.0
+theme_override_constants/separation = 50
+
+[node name="audio-button" type="Button" parent="VBoxContainer" unique_id=736010216]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "AUDIO"
+icon = ExtResource("3_kc0ev")
+expand_icon = true
+
+[node name="graphics-button" type="Button" parent="VBoxContainer" unique_id=1579947932]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "GRAPHICS"
+icon = ExtResource("4_n7ol8")
+expand_icon = true
+
+[node name="controls-button" type="Button" parent="VBoxContainer" unique_id=340380535]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "CONTROLS"
+icon = ExtResource("5_4kxj8")
+expand_icon = true
+
+[node name="gameplay-button" type="Button" parent="VBoxContainer" unique_id=1160951765]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "GAMEPLAY"
+icon = ExtResource("6_nyhsd")
+expand_icon = true
+
+[node name="interface-button" type="Button" parent="VBoxContainer" unique_id=2036365193]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "INTERFACE"
+icon = ExtResource("7_l3few")
+expand_icon = true
+
+[node name="language-button" type="Button" parent="VBoxContainer" unique_id=992657065]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "LANGUAGE"
+icon = ExtResource("8_e7sh2")
+expand_icon = true
+
+[node name="restore-defaults-button" type="Button" parent="VBoxContainer" unique_id=793753970]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "RESTORE DEFAULTS"
+icon = ExtResource("9_sr5uf")
+expand_icon = true
+
+[node name="back-button" type="Button" parent="." unique_id=276985854]
+offset_left = 840.0
+offset_top = 414.0
+offset_right = 1078.0
+offset_bottom = 492.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lcuor")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j10ka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3e7dv")
+text = "BACK"
+
+[connection signal="pressed" from="VBoxContainer/audio-button" to="." method="_on_audiobutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/graphics-button" to="." method="_on_graphicsbutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/controls-button" to="." method="_on_controlsbutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/gameplay-button" to="." method="_on_gameplaybutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/interface-button" to="." method="_on_interfacebutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/language-button" to="." method="_on_languagebutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/restore-defaults-button" to="." method="_on_restoredefaultsbutton_pressed"]
+[connection signal="pressed" from="back-button" to="." method="_on_back_pressed"]

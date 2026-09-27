@@ -1,0 +1,744 @@
+[gd_scene format=3 uid="uid://dskpojkp8joia"]
+
+[ext_resource type="Script" uid="uid://fdksrdd6ucbv" path="res://scenario-selection-screen/scenario-selection-screen-script.gd" id="1_r3xcw"]
+[ext_resource type="Texture2D" uid="uid://k6p52j7nny4" path="res://scenario-selection-screen/scenario-selection-screen-assets/scenario-selection-screen-background-asset.jpg" id="2_r3xcw"]
+[ext_resource type="FontFile" uid="uid://b0nad6i1q02ed" path="res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf" id="3_m2mpk"]
+[ext_resource type="Texture2D" uid="uid://ckthk3slv3u8y" path="res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/overview.PNG" id="4_chcid"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3xcw"]
+bg_color = Color(0, 0, 0, 0.73)
+border_width_bottom = 1
+border_color = Color(0.6421665, 0.5657284, 0.38109186, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snpre"]
+bg_color = Color(0, 0, 0, 0.8)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dw4ue"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vpp8d"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5h3pq"]
+bg_color = Color(0, 0, 0, 0.73)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6421665, 0.5657284, 0.38109186, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2mpk"]
+bg_color = Color(0, 0, 0, 0.73)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6421665, 0.5657284, 0.38109186, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7al4m"]
+bg_color = Color(0, 0, 0, 0.73)
+border_width_bottom = 1
+border_color = Color(0.6421665, 0.5657284, 0.38109186, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j10ka"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8y1yn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pg4h"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chcid"]
+bg_color = Color(0.105882354, 0.105882354, 0.105882354, 0.6)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_as1pq"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1b0i3"]
+bg_color = Color(0, 0, 0, 0.90000004)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.84705883, 0.6862745, 0.4509804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yn3m5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tn8fj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5pom5"]
+bg_color = Color(0.4509804, 0.27058825, 0.07058824, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8868246, 0.91015625, 0.1635437, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pay0t"]
+bg_color = Color(0.50980395, 0.3529412, 0.11764706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8868246, 0.91015625, 0.1635437, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w4jbx"]
+bg_color = Color(0.50980395, 0.3529412, 0.11764706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8868246, 0.91015625, 0.1635437, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6vq0t"]
+bg_color = Color(0.50980395, 0.3529412, 0.11764706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8868246, 0.91015625, 0.1635437, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="SceneSelectionScreen" type="Node2D" unique_id=1157667865]
+script = ExtResource("1_r3xcw")
+
+[node name="background-image" type="Sprite2D" parent="." unique_id=279302924]
+position = Vector2(572.99994, 322.5)
+scale = Vector2(1.8758168, 1.8750001)
+texture = ExtResource("2_r3xcw")
+
+[node name="TitleSceneSelectionPanel" type="Panel" parent="." unique_id=916585756]
+offset_right = 1152.0
+offset_bottom = 80.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_r3xcw")
+
+[node name="ScenarioSelectionBackButtonsVBoxContainer" type="VBoxContainer" parent="TitleSceneSelectionPanel" unique_id=2069605379]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 10.0
+offset_right = 1128.0
+offset_bottom = 70.0
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="back-button" type="Button" parent="TitleSceneSelectionPanel/ScenarioSelectionBackButtonsVBoxContainer" unique_id=1757572764]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(0.8870018, 0.85827667, 0.8640501, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_snpre")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dw4ue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vpp8d")
+text = "BACK"
+
+[node name="ScenarioSelectionTitleVBoxContainer" type="VBoxContainer" parent="TitleSceneSelectionPanel" unique_id=103363069]
+layout_mode = 0
+offset_left = 210.0
+offset_right = 942.0
+offset_bottom = 81.0
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="title-label" type="Label" parent="TitleSceneSelectionPanel/ScenarioSelectionTitleVBoxContainer" unique_id=101545825]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 3)
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 30
+text = "LEGACY OF EMPIRES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="info-label" type="Label" parent="TitleSceneSelectionPanel/ScenarioSelectionTitleVBoxContainer" unique_id=1573588487]
+layout_mode = 2
+text = "Select the war that will define your legacy"
+horizontal_alignment = 1
+
+[node name="ScenarioSelectionCampaignLabelVBoxContainer" type="VBoxContainer" parent="TitleSceneSelectionPanel" unique_id=2006315890]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 0
+offset_left = 972.0
+offset_top = 10.0
+offset_right = 1122.0
+offset_bottom = 70.0
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="title-label" type="Label" parent="TitleSceneSelectionPanel/ScenarioSelectionCampaignLabelVBoxContainer" unique_id=2094112133]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 3)
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 25
+text = "CAMPAIGN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SceneSelectionPanel" type="Panel" parent="." unique_id=1060319043]
+offset_left = 15.0
+offset_top = 90.0
+offset_right = 425.0
+offset_bottom = 590.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5h3pq")
+
+[node name="SelectScenarioVBoxContainer" type="VBoxContainer" parent="SceneSelectionPanel" unique_id=1234919709]
+layout_mode = 0
+offset_left = 5.0
+offset_right = 405.0
+offset_bottom = 500.0
+theme_override_constants/separation = 22
+
+[node name="TextVBoxContainer" type="VBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer" unique_id=1792560470]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="TextHBoxContainer" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer" unique_id=1602657200]
+custom_minimum_size = Vector2(400, 20)
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_enabled = true
+theme_override_constants/separation = 4
+
+[node name="chronicles-label" type="Label" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer/TextHBoxContainer" unique_id=577042313]
+layout_mode = 2
+offset_transform_visual_only = false
+theme_override_colors/font_color = Color(0.84313726, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 13
+text = "THE CHRONICLES"
+
+[node name="TextHBoxContainer2" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer" unique_id=4217091]
+custom_minimum_size = Vector2(400, 20)
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_position = Vector2(15, -20)
+offset_transform_visual_only = false
+theme_override_constants/separation = 4
+
+[node name="chose-campaign-label" type="Label" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer/TextHBoxContainer2" unique_id=1653773836]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8870018, 0.85827667, 0.8640501, 1)
+theme_override_font_sizes/font_size = 23
+text = "CHOSE CAMPAIGN"
+
+[node name="TextHBoxContainer3" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer" unique_id=1162920001]
+custom_minimum_size = Vector2(400, 20)
+layout_mode = 2
+size_flags_vertical = 3
+offset_transform_position = Vector2(15, -40)
+offset_transform_visual_only = false
+theme_override_constants/separation = 4
+
+[node name="text-label" type="Label" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/TextVBoxContainer/TextHBoxContainer3" unique_id=1899057368]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme_override_colors/font_color = Color(0.8870018, 0.85827667, 0.8640501, 1)
+theme_override_font_sizes/font_size = 13
+text = "FIVE WARS. ONE HISTORY SHAPED BY YOUR COMMAND"
+
+[node name="ScenarioSelectionButtonsVBoxContainer" type="VBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer" unique_id=237487239]
+layout_mode = 2
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="TrojanWarHBoxContainer" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer" unique_id=87414193]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="trojan-war-button" type="Button" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/TrojanWarHBoxContainer" unique_id=1271892599]
+custom_minimum_size = Vector2(370, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_snpre")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dw4ue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vpp8d")
+text = "01   TROJAN WAR
+12TH CENTURY BC
+"
+
+[node name="100YearsWarHBoxContainer" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer" unique_id=1710503856]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="100-years-war-button" type="Button" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/100YearsWarHBoxContainer" unique_id=2067097276]
+custom_minimum_size = Vector2(370, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_snpre")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dw4ue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vpp8d")
+text = "02  100 YEARS WAR
+1337 – 1453"
+
+[node name="WarsofAlexandertheGreatHBoxContainer" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer" unique_id=347363189]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="wars-of-alexander-the-great-button" type="Button" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/WarsofAlexandertheGreatHBoxContainer" unique_id=1280188188]
+custom_minimum_size = Vector2(370, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_snpre")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dw4ue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vpp8d")
+text = "03   WARS OF ALEXANDER THE GREAT
+336 - 323 BC"
+
+[node name="SecondPunicWarHBoxContainer" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer" unique_id=481856542]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="second-punic-war-button" type="Button" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/SecondPunicWarHBoxContainer" unique_id=1695402324]
+custom_minimum_size = Vector2(370, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_snpre")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dw4ue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vpp8d")
+text = "04   SECOND PUNIC WAR
+218 - 201 BC"
+
+[node name="TheFirstCrusadeHBoxContainer" type="HBoxContainer" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer" unique_id=161664348]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="the-first-crusade-button" type="Button" parent="SceneSelectionPanel/SelectScenarioVBoxContainer/ScenarioSelectionButtonsVBoxContainer/TheFirstCrusadeHBoxContainer" unique_id=104102023]
+custom_minimum_size = Vector2(370, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_snpre")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dw4ue")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vpp8d")
+text = "05 THE FIRST CRUSADE
+1096 - 1099"
+
+[node name="SceneSelectionInfoPanel" type="Panel" parent="." unique_id=1113105104]
+offset_left = 465.0
+offset_top = 90.0
+offset_right = 1137.0
+offset_bottom = 590.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2mpk")
+
+[node name="ScenarioSelectionInfoVBoxContainer" type="VBoxContainer" parent="SceneSelectionInfoPanel" unique_id=1146283511]
+custom_minimum_size = Vector2(0, 200)
+custom_maximum_size = Vector2(-1, 150)
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 657.0
+offset_bottom = 546.0
+theme_override_constants/separation = 26
+alignment = 1
+
+[node name="scenario-photo-texture-rect" type="TextureRect" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer" unique_id=1654573663]
+layout_mode = 2
+texture = ExtResource("4_chcid")
+
+[node name="OnPhotoTextPanel" type="Panel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer/scenario-photo-texture-rect" unique_id=1211384576]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 642.0
+offset_bottom = 149.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7al4m")
+
+[node name="campaign-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer/scenario-photo-texture-rect/OnPhotoTextPanel" unique_id=998105649]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 96.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 15
+text = "Campaign"
+
+[node name="scenario-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer/scenario-photo-texture-rect/OnPhotoTextPanel" unique_id=656869792]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 30.0
+offset_right = 226.0
+offset_bottom = 55.0
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 20
+text = "THE TROJAN WAR"
+
+[node name="geography-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer/scenario-photo-texture-rect/OnPhotoTextPanel" unique_id=1142651989]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 60.0
+offset_right = 96.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 15
+text = "Campaign"
+
+[node name="ScenarioSelectionInfoVBoxContainer2" type="VBoxContainer" parent="SceneSelectionInfoPanel" unique_id=691425434]
+custom_minimum_size = Vector2(0, 260)
+custom_maximum_size = Vector2(-1, 260)
+layout_mode = 0
+offset_left = 15.0
+offset_top = 170.0
+offset_right = 657.0
+offset_bottom = 391.0
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="scenario-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=911846952]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 20
+text = "THE TROJAN WAR"
+
+[node name="scenario-description-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=129867760]
+custom_maximum_size = Vector2(642, 63)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 15
+text = "LEAD THE ACHAEAN ACROSS THE AEGEAN OR DEFEND THE LEGENDARY WALLS OF TROY. BALANCE HONOUR , SIEGECRAFT AND SURVIVAL IN A WAR DESTINED TO BECOME MYTH"
+autowrap_mode = 3
+
+[node name="InfoHBoxContainer" type="HBoxContainer" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=797907628]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="era-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer" unique_id=449341247]
+custom_minimum_size = Vector2(194, 50)
+clip_contents = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0.84313726, 0.69803923, 0.4117647, 1)
+theme_override_fonts/normal_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/mono_font = ExtResource("3_m2mpk")
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/mono_font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_j10ka")
+bbcode_enabled = true
+text = " ERA"
+tab_size = 5
+
+[node name="era-description-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer/era-rich-text-label" unique_id=1544461558]
+custom_minimum_size = Vector2(194, 50)
+clip_contents = false
+layout_mode = 0
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme_override_fonts/normal_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/mono_font = ExtResource("3_m2mpk")
+theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/bold_font_size = 17
+theme_override_font_sizes/bold_italics_font_size = 17
+theme_override_font_sizes/italics_font_size = 17
+theme_override_font_sizes/mono_font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_8y1yn")
+bbcode_enabled = true
+text = " 
+ AGE OF HEROES"
+tab_size = 5
+
+[node name="region-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer" unique_id=112936002]
+custom_minimum_size = Vector2(194, 50)
+clip_contents = false
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme_override_colors/default_color = Color(0.84313726, 0.69803923, 0.4117647, 1)
+theme_override_fonts/normal_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/mono_font = ExtResource("3_m2mpk")
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/mono_font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_j10ka")
+bbcode_enabled = true
+text = " REGION"
+tab_size = 5
+
+[node name="region-description-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer/region-rich-text-label" unique_id=1603278308]
+custom_minimum_size = Vector2(194, 50)
+clip_contents = false
+layout_mode = 0
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme_override_fonts/normal_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/mono_font = ExtResource("3_m2mpk")
+theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/bold_font_size = 17
+theme_override_font_sizes/bold_italics_font_size = 17
+theme_override_font_sizes/italics_font_size = 17
+theme_override_font_sizes/mono_font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_3pg4h")
+bbcode_enabled = true
+text = "  
+ AEGEAN SEA"
+tab_size = 5
+
+[node name="difficulty-option-button" type="OptionButton" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer" unique_id=1767208365]
+custom_minimum_size = Vector2(194, 30)
+custom_maximum_size = Vector2(-1, 30)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 20)
+offset_transform_visual_only = false
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_pressed_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_colors/font_hover_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.8627451, 0.47058824, 1)
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_chcid")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_as1pq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1b0i3")
+alignment = 1
+selected = 0
+item_count = 3
+popup/item_0/text = "EASY"
+popup/item_0/id = 0
+popup/item_1/text = "MEDIUM"
+popup/item_1/id = 1
+popup/item_2/text = "HARD"
+popup/item_2/id = 2
+
+[node name="difficulty-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/InfoHBoxContainer/difficulty-option-button" unique_id=1620503348]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -24.0
+offset_right = 194.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_fonts/font = ExtResource("3_m2mpk")
+text = "DIFFICULTY"
+
+[node name="ObejctiveInfoHBoxContainer" type="HBoxContainer" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=1895172965]
+layout_mode = 2
+theme_override_constants/separation = -71
+
+[node name="objective-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/ObejctiveInfoHBoxContainer" unique_id=1416157314]
+custom_minimum_size = Vector2(194, 20)
+clip_contents = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0.84313726, 0.69803923, 0.4117647, 1)
+theme_override_fonts/normal_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/mono_font = ExtResource("3_m2mpk")
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/mono_font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_yn3m5")
+bbcode_enabled = true
+text = "* OBJECTIVE - "
+tab_size = 5
+
+[node name="objective-description-rich-text-label" type="RichTextLabel" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2/ObejctiveInfoHBoxContainer/objective-rich-text-label" unique_id=2143024708]
+custom_minimum_size = Vector2(194, 20)
+custom_maximum_size = Vector2(-1, 20)
+clip_contents = false
+layout_mode = 0
+offset_left = 122.0
+offset_top = 1.0
+offset_right = 640.0
+offset_bottom = 51.0
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme_override_colors/default_color = Color(0.84313726, 0.69803923, 0.4117647, 1)
+theme_override_fonts/normal_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_font = ExtResource("3_m2mpk")
+theme_override_fonts/bold_italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/italics_font = ExtResource("3_m2mpk")
+theme_override_fonts/mono_font = ExtResource("3_m2mpk")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 12
+theme_override_font_sizes/italics_font_size = 12
+theme_override_font_sizes/mono_font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_tn8fj")
+bbcode_enabled = true
+text = "BREAK THE WALLS OF TROY, OR HOLD THEM AGAINST ENEMY INVADERS"
+autowrap_mode = 2
+tab_size = 5
+
+[node name="scenario-label2" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=93368508]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 14
+text = "PLAYABLE SIDES:   ACHAEANS • TROJANS"
+
+[node name="CampaignHBoxContainer" type="HBoxContainer" parent="SceneSelectionInfoPanel" unique_id=619108686]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 428.0
+offset_right = 657.0
+offset_bottom = 488.0
+
+[node name="campaign-files-label" type="Label" parent="SceneSelectionInfoPanel/CampaignHBoxContainer" unique_id=1421518675]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 12
+text = "CAMPAIGN FILES READY"
+
+[node name="begin-campaign-button" type="Button" parent="SceneSelectionInfoPanel/CampaignHBoxContainer" unique_id=1482345039]
+custom_minimum_size = Vector2(220, 50)
+custom_maximum_size = Vector2(-1, 50)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(250, 5)
+offset_transform_visual_only = false
+theme_override_fonts/font = ExtResource("3_m2mpk")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_5pom5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pay0t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w4jbx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_6vq0t")
+text = "BEGIN CAMPAIGN >"
+
+[node name="start-campaign-info-label" type="Label" parent="." unique_id=294188595]
+offset_left = 15.0
+offset_top = 608.0
+offset_right = 55.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 15
+text = "TO START CAMPAIGN SELECT ONE SCENARIO FROM CHOSE CAMPAIGN SECTION, AND CLICK ON  BEGIN CAMPAIGN"
+
+[node name="legacy-of-empires-info-label" type="Label" parent="." unique_id=1506758583]
+offset_left = 906.0
+offset_top = 608.0
+offset_right = 1137.0
+offset_bottom = 630.0
+theme_override_colors/font_color = Color(0.84705883, 0.69803923, 0.4117647, 1)
+theme_override_font_sizes/font_size = 15
+text = "LE • BUILD YOUR OWN HISTORY"
+
+[connection signal="pressed" from="TitleSceneSelectionPanel/ScenarioSelectionBackButtonsVBoxContainer/back-button" to="." method="_on_backbutton_pressed"]

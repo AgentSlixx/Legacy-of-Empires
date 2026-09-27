@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://8n3l1drfrmvt"]
 
-[ext_resource type="Script" uid="uid://carfhujlvonsb" path="res://start-screen/start_screen.gd" id="1_epxgh"]
+[ext_resource type="Script" uid="uid://carfhujlvonsb" path="res://start-screen/start-screen-script.gd" id="1_epxgh"]
 [ext_resource type="Texture2D" uid="uid://dffeah6iht6g1" path="res://start-screen/start-screen-assets/start-screen-background.png" id="2_vuqfb"]
 [ext_resource type="Shader" uid="uid://ch6u3rlytk2gw" path="res://start-screen/smoke_1.gdshader" id="3_osp0p"]
 [ext_resource type="Texture2D" uid="uid://drwfnnuyn8g81" path="res://start-screen/start-screen-assets/smoke-asset-4.png" id="4_r5mj5"]
