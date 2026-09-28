@@ -716,7 +716,7 @@ autowrap_mode = 2
 tab_size = 5
 vertical_alignment = 1
 
-[node name="scenario-label2" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=93368508]
+[node name="playable-sides-label" type="Label" parent="SceneSelectionInfoPanel/ScenarioSelectionInfoVBoxContainer2" unique_id=93368508]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_m2mpk")
 theme_override_font_sizes/font_size = 14

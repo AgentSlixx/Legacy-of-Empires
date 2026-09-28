@@ -1,6 +1,6 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1790521213
-export_presets.cfg::TextFile::-1::1790508367::0::1::::<><><>0<>0<><>::
+::res://::1790587630
+export_presets.cfg::TextFile::-1::1790532325::0::1::::<><><>0<>0<><>::
 ::res://credits-screen/::1789389699
 credits-screen-script.gd::GDScript::1265040720512918592::1789387836::0::1::::<>Node<><>0<>0<><>::
 credits-screen.tscn::PackedScene::7466282725329750088::1789389699::0::1::::<><><>0<>0<><>::uid://sa2bho0cl3m7::::res://credits-screen/credits-screen-script.gd<>uid://dlaisvhqmkolp::::res://credits-screen/credits-screen-assets/credits-screen-background-asset.png
@@ -124,10 +124,10 @@ authors.json::JSON::-1::1785143449::0::1::::<><><>0<>0<><>::
 historical_facts.json::JSON::-1::1785143449::0::1::::<><><>0<>0<><>::
 loading_tips.json::JSON::-1::1785143449::0::1::::<><><>0<>0<><>::
 quotes.json::JSON::-1::1785186714::0::1::::<><><>0<>0<><>::
-::res://scenario-selection-screen/::1790528686
-scenario-selection-screen-script.gd::GDScript::357777563380180847::1790528685::0::1::::<>Node2D<><>0<>0<><>::
-scenario-selection-screen.tscn::PackedScene::8444241258994845440::1790528685::0::1::::<><><>0<>0<><>::uid://fdksrdd6ucbv::::res://scenario-selection-screen/scenario-selection-screen-script.gd<>uid://k6p52j7nny4::::res://scenario-selection-screen/scenario-selection-screen-assets/scenario-selection-screen-background-asset.jpg<>uid://b0nad6i1q02ed::::res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf<>uid://ckthk3slv3u8y::::res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/overview.PNG
-::res://scenario-selection-screen/scenario-selection-screen-assets/::1790531852
+::res://scenario-selection-screen/::1790532221
+scenario-selection-screen-script.gd::GDScript::357777563380180847::1790532221::0::1::::<>Node2D<><>0<>0<><>::
+scenario-selection-screen.tscn::PackedScene::8444241258994845440::1790532092::0::1::::<><><>0<>0<><>::uid://fdksrdd6ucbv::::res://scenario-selection-screen/scenario-selection-screen-script.gd<>uid://k6p52j7nny4::::res://scenario-selection-screen/scenario-selection-screen-assets/scenario-selection-screen-background-asset.jpg<>uid://b0nad6i1q02ed::::res://fonts/Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Bold.ttf<>uid://dpvlh4t6llpdx::::res://scenario-selection-screen/scenario-selection-screen-assets/100-years-war-scenario-image.jpg
+::res://scenario-selection-screen/scenario-selection-screen-assets/::1790531859
 100-years-war-scenario-image.jpg::CompressedTexture2D::8256128579914895329::1790531852::1790531853::1::::<><><>0<>0<>eb645e250700a70752319bb8e2dcd87e<>res://.godot/imported/100-years-war-scenario-image.jpg-0e08da10835973c2c43ba51654252eb6.ctex::
 alexander-wars-scenario-image.jpg::CompressedTexture2D::4299765864040101926::1790531852::1790531855::1::::<><><>0<>0<>dbac07a691754bc836fd4853ae480634<>res://.godot/imported/alexander-wars-scenario-image.jpg-890442101a3c6c45ae16afe75e67f209.ctex::
 first-crusade-scenario-image.jpg::CompressedTexture2D::7742855501695655200::1790531852::1790531856::1::::<><><>0<>0<>b9e8c2c263cba79e6dbef736785faefb<>res://.godot/imported/first-crusade-scenario-image.jpg-65d310f0f71dc0ed7c31c84bac25ab1c.ctex::
